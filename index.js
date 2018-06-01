@@ -1,21 +1,27 @@
-const Metalsmith = require('metalsmith');
+const metalsmith = require('metalsmith');
+const assets = require('metalsmith-assets');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const discoverPartials = require('metalsmith-discover-partials');
 
-Metalsmith(__dirname)
+metalsmith(__dirname)
   .metadata({
       title: "blah blah"
   })
-  .source('./src')
+  .source('./src/content')
   .destination('./build')
   .clean(true)
+  .use(assets({
+      source: './src/assets',
+      destination: '.'
+  }))
   .use(markdown())
   .use(discoverPartials({
-    directory: 'layouts/partials',
+    directory: './src/layouts/partials',
     pattern: /\.hbs$/
   }))
   .use(layouts({
+      directory: './src/layouts',
       engine: 'handlebars',
       pattern: '*.html'
   }))
