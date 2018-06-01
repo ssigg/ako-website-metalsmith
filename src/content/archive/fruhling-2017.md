@@ -3,7 +3,7 @@ draft: false
 collection: archive
 title: Frühling 2017
 sortkey: 201705
-flyer: fr-2017.jpg
+flyer: /images/fr-2017.jpg
 ---
 
 **Gemeinschaftsprojekt mit dem Akademischen Chor Zürich**

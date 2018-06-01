@@ -3,7 +3,7 @@ draft: false
 collection: archive
 title: Herbst 2016
 sortkey: 201610
-flyer: he-2016.jpg
+flyer: /images/he-2016.jpg
 ---
 
 **Musik am Schwedischen Hof Gustavs III.**

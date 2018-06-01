@@ -18,6 +18,7 @@
     "metalsmith-drafts": "0.0.1",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-layouts": "^2.1.0",
-    "metalsmith-markdown": "^0.2.2"
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-text-replace": "^1.0.1"
   }
 }

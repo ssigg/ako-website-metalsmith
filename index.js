@@ -2,8 +2,9 @@ const metalsmith = require('metalsmith');
 const assets = require('metalsmith-assets');
 const drafts = require('metalsmith-drafts');
 const collections = require('metalsmith-collections');
-const ignore = require('metalsmith-ignore');
+const textReplace = require('metalsmith-text-replace');
 const markdown = require('metalsmith-markdown');
+const ignore = require('metalsmith-ignore');
 const discoverPartials = require('metalsmith-discover-partials');
 const layouts = require('metalsmith-layouts');
 
@@ -37,6 +38,20 @@ metalsmith(__dirname)
           sortBy: 'sortkey',
           reverse: true
       }
+  }))
+
+  // Replace backslash line endings by two-space line endings
+  .use(textReplace({
+      '**/*.md': [
+        {
+            find: /\\\n/g,
+            replace: '  \n'
+        },
+        {
+            find: /\\\r/g,
+            replace: '  \r'
+        }
+      ]
   }))
 
   // Apply markdown everywhere
