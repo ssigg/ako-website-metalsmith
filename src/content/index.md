@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Aktuell
 flyer: fr-2017.jpg
 layout: standard.hbs

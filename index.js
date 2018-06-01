@@ -1,5 +1,6 @@
 const metalsmith = require('metalsmith');
 const assets = require('metalsmith-assets');
+const drafts = require('metalsmith-drafts');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const discoverPartials = require('metalsmith-discover-partials');
@@ -15,6 +16,7 @@ metalsmith(__dirname)
       source: './src/assets',
       destination: '.'
   }))
+  .use(drafts())
   .use(markdown())
   .use(discoverPartials({
     directory: './src/layouts/partials',

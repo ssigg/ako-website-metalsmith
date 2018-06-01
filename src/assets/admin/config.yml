@@ -4,12 +4,14 @@ backend:
   branch: master # Branch to update 
 media_folder: "src/assets/images"
 public_folder: "/images"
+display_url: https://new-ako.akademische-orchester.ch
 collections:
 - name: "index" # Used in routes, e.g. /admin/collections/blog
   label: "Start" # Used in the UI
   folder: "src/content" # The path to the folder where the documents are stored
   create: false # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
+    - {label: "Draft", name: "draft", widget: "boolean", default: true}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Flyer", name: "flyer", widget: "image"}
     - {label: "Content", name: "body", widget: "markdown"}
@@ -18,6 +20,7 @@ collections:
   folder: "src/content/archiv" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
+    - {label: "Draft", name: "draft", widget: "boolean", default: true}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Sort Key (YYYYMM)", name: "weight", widget: "number"}
     - {label: "Flyer", name: "flyer", widget: "image"}
@@ -27,5 +30,6 @@ collections:
   folder: "src/content/subscription" # The path to the folder where the documents are stored
   create: false # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
+    - {label: "Draft", name: "draft", widget: "boolean", default: true}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Program", name: "body", widget: "markdown"}
