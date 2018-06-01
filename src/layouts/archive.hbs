@@ -1,0 +1,9 @@
+<ul>
+    {{#each collections.archive}}
+        <li>
+            <h3>{{ this.title }}</h3>
+            <img src="images/{{ this.flyer }}">
+            <article>{{{ this.contents }}}</article>
+        </li>
+    {{/each}}
+</ul>

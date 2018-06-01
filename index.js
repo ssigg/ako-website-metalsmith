@@ -1,9 +1,10 @@
 const metalsmith = require('metalsmith');
 const assets = require('metalsmith-assets');
 const drafts = require('metalsmith-drafts');
+const collections = require('metalsmith-collections');
 const markdown = require('metalsmith-markdown');
-const layouts = require('metalsmith-layouts');
 const discoverPartials = require('metalsmith-discover-partials');
+const layouts = require('metalsmith-layouts');
 
 metalsmith(__dirname)
   .metadata({
@@ -17,6 +18,13 @@ metalsmith(__dirname)
       destination: '.'
   }))
   .use(drafts())
+  .use(collections({
+      archive: {
+          pattern: 'archive/*.md',
+          sortBy: 'sortkey',
+          reverse: true
+      }
+  }))
   .use(markdown())
   .use(discoverPartials({
     directory: './src/layouts/partials',
