@@ -1,6 +1,6 @@
 ---
 title: Orchester
-flyer: /uploaded/fr-2017.jpg
+flyer: fr-2017.jpg
 layout: standard.hbs
 ---
 # Akademisches Kammerorchester Zürich

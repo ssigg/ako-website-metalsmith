@@ -3,7 +3,7 @@ backend:
   repo: ssigg/ako-website-metalsmith # Path to your Github repository
   branch: master # Branch to update 
 media_folder: "src/assets/images"
-# public_folder: "/uploaded"
+public_folder: "/images"
 collections:
 - name: "index" # Used in routes, e.g. /admin/collections/blog
   label: "Start" # Used in the UI
