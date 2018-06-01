@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 collection: archive
 title: Frühling 2016
 sortkey: 201604
