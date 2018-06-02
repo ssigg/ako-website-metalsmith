@@ -1,10 +1,11 @@
 ---
-title: Orchester
-layout: standard.hbs
 draft: true
+title: Orchester
 editable: true
 ---
 # Akademisches Kammerorchester Zürich
+
+![Das AKO](/images/ako-2010.jpg)
 
 Der Verein Akademisches Kammerorchester Zürich (AKO) der ETH und Universität Zürich wurde im Jahr 1992 gegründet. Das Orchester besteht, je nach Programm, aus rund 40 Studierenden, Assistentlnnen und Ehemaligen der beiden Universitäten. Die Programme des AKO werden in zeitlich konzentrierten Probesessionen erarbeitet. Pro Jahr werden in der Regel zwei Projekte durchgeführt.
 
