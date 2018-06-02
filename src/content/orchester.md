@@ -2,6 +2,7 @@
 draft: true
 title: Orchester
 editable: true
+layout: standard.hbs
 ---
 # Akademisches Kammerorchester Zürich
 

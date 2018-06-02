@@ -16,6 +16,7 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Content", name: "body", widget: "markdown"}
     - {label: "Editable", name: "editable", widget: "hidden", default: true}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "standard.hbs"}
 - name: "archive" # Used in routes, e.g. /admin/collections/blog
   label: "Archiv" # Used in the UI
   folder: "src/content/archive" # The path to the folder where the documents are stored
@@ -35,3 +36,4 @@ collections:
     - {label: "Draft", name: "draft", widget: "boolean", default: true}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Program", name: "body", widget: "markdown"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "subscription.hbs"}
