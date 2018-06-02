@@ -7,17 +7,16 @@ public_folder: "/images"
 display_url: https://new-ako.akademische-orchester.ch
 collections:
 - name: "index" # Used in routes, e.g. /admin/collections/blog
-  label: "Start" # Used in the UI
+  label: "Normale Seiten" # Used in the UI
   folder: "src/content" # The path to the folder where the documents are stored
   filter: { "field": "editable", "value": true }
   create: false # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
     - {label: "Draft", name: "draft", widget: "boolean", default: true}
     - {label: "Title", name: "title", widget: "string"}
-    - {label: "Flyer", name: "flyer", widget: "image"}
     - {label: "Content", name: "body", widget: "markdown"}
 - name: "archive" # Used in routes, e.g. /admin/collections/blog
-  label: "Archive Entry" # Used in the UI
+  label: "Archiv" # Used in the UI
   folder: "src/content/archive" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
@@ -28,7 +27,7 @@ collections:
     - {label: "Flyer", name: "flyer", widget: "image"}
     - {label: "Content", name: "body", widget: "markdown"}
 - name: "subscription" # Used in routes, e.g. /admin/collections/blog
-  label: "Subscription" # Used in the UI
+  label: "Anmeldung" # Used in the UI
   folder: "src/content/subscription" # The path to the folder where the documents are stored
   create: false # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
