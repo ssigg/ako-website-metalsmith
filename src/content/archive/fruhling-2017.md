@@ -1,11 +1,10 @@
 ---
+title: Frühling 2017
+flyer: /images/fr-2017.jpg
+sortkey: '201705'
 draft: false
 collection: archive
-title: Frühling 2017
-sortkey: 201705
-flyer: /images/fr-2017.jpg
 ---
-
 **Gemeinschaftsprojekt mit dem Akademischen Chor Zürich**
 
 **Hermann Suter**: Le Laudi  

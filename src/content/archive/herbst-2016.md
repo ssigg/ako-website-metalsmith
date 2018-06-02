@@ -1,11 +1,10 @@
 ---
+title: Herbst 2016
+flyer: /images/he-2016.jpg
+sortkey: '201610'
 draft: false
 collection: archive
-title: Herbst 2016
-sortkey: 201610
-flyer: /images/he-2016.jpg
 ---
-
 **Musik am Schwedischen Hof Gustavs III.**
 
 **Naumann**: Sinfonia aus der Oper Cora  

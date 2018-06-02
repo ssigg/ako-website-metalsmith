@@ -1,8 +1,8 @@
 ---
-draft: false
 title: Aktuell
-flyer: fr-2017.jpg
 layout: standard.hbs
+draft: false
+editable: true
 ---
 Herrmann Suter:  
 # Le Laudi

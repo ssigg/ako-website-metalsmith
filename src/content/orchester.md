@@ -1,8 +1,8 @@
 ---
-draft: true
 title: Orchester
-flyer: fr-2017.jpg
 layout: standard.hbs
+draft: true
+editable: true
 ---
 # Akademisches Kammerorchester Zürich
 
