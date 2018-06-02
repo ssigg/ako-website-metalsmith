@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Aktuell
+editable: true
 ---
 Herrmann Suter:  
 
